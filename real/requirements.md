@@ -1,0 +1,3 @@
+- title of this would be legal asistant
+- i wiould provide the docs folder to sca and to do answers
+- the docs would have gdpr data protection 
