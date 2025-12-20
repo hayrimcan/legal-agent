@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HITL | Requirement System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <h1>HITL System</h1>
+            </div>
+            <button id="admin-toggle" class="ghost-btn">Admin Access</button>
+        </header>
+
+        <main>
+            <!-- User Section: Submit Requirement -->
+            <section id="user-section" class="card active">
+                <div class="card-header">
+                    <h2>Submit Requirement</h2>
+                    <p>Describe your needs and our team will review it.</p>
+                </div>
+                <form id="requirement-form">
+                    <div class="input-group">
+                        <textarea id="requirement-input"
+                            placeholder="e.g., I need a legal contract for a freelance web developer..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="primary-btn">Submit Request</button>
+                </form>
+            </section>
+
+            <!-- Admin Section: Dashboard (Hidden by default) -->
+            <section id="admin-section" class="card hidden">
+                <div class="card-header">
+                    <h2>Admin Dashboard</h2>
+                    <p>Review pending requirements.</p>
+                </div>
+                <div id="admin-list" class="list-container">
+                    <p class="empty-state">No pending requirements.</p>
+                    <!-- Items will be injected here via JS -->
+                </div>
+            </section>
+
+            <!-- Result Section: Approved Requirements -->
+            <section id="result-section" class="card">
+                <div class="card-header">
+                    <h2>Your Results</h2>
+                    <p>Approved and processed requirements.</p>
+                </div>
+                <div id="result-list" class="list-container">
+                    <p class="empty-state">No results yet. submit a request to get started.</p>
+                    <!-- Items will be injected here via JS -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
