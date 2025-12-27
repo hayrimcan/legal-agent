@@ -56,6 +56,29 @@ header {
     border-bottom: 1px solid var(--card-border);
 }
 
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.language-selector select {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.language-selector select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
 .logo {
     display: flex;
     align-items: center;
